@@ -1,8 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const progressElements = document.querySelectorAll('.progress-done');
-
-    progressElements.forEach(function(element) {
-        element.style.width = element.getAttribute('data-done') + '%';
-        element.style.opacity = 1;
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+        const navBar = document.querySelector('.nav-bar');
+        navBar.classList.toggle('active');  // Toggles the 'active' class on and off
     });
 });
