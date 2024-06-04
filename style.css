@@ -16,7 +16,7 @@ header{
     border-bottom: 1px solid #4f4f4f;
     background-color: #fff;
     position: fixed;
-    z-index: 999;
+    z-index: 1;
     
 }
 
@@ -59,9 +59,14 @@ main{
 }
 
 .about-img img{
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 50%;
+    transition: 0.7s ease;
+}
+
+.about-img img:hover{
+    scale: (1.1);
 }
 
 .aobut-content{
@@ -303,8 +308,9 @@ p{
 }
 
 .project-category{
-    font-size: 0.8em;
+    font-size: 1em;
     color: black;
+    font-weight: bold;
 }
 
 .project-title{
@@ -315,6 +321,11 @@ p{
     margin-top: 10px;
 
 
+}
+
+.project-title span{
+    font-size: small;
+    font-weight: 100;
 }
 
 
@@ -383,6 +394,11 @@ p{
     justify-content: space-evenly;
     flex-wrap: wrap;
     
+}
+
+svg{
+    width: 50px;
+    height: 50px;
 }
 
 .soft-skills h1,.technical-skills h1{
@@ -455,7 +471,9 @@ p{
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2em;
 }
 
@@ -475,7 +493,7 @@ p{
 }
 
 .footer-title span{
-    color: #3a6cf4;
+    color: #ffc200;
 }
 
 
